@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 23, 2015 11:23:12 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="entities.Employee" table="employee" catalog="world">
+        <id name="employeeId" type="java.lang.Long">
+            <column name="employee_id" />
+            <generator class="identity" />
+        </id>
+        <property name="employeeName" type="string">
+            <column name="employee_name" length="40" />
+        </property>
+    </class>
+</hibernate-mapping>
